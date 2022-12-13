@@ -1,0 +1,554 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(0, 0, 0);;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 75vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.502) 0%, rgba(0, 0, 0, 0.502) 100%), url(../img/pipe1.jpg);
+    /*background-image: url(../img/pipe1.0.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner__header{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+}
+
+
+.titulo__banner{
+    font-size: 99px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.subtitulo__banner{
+    font-size: 33px;
+    font-weight: 500;
+    color: aliceblue;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.menu__banner{
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    width: 7%;
+}
+
+.link__menu{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.link__menu:hover{
+    /*color: rgb(147, 9, 9);*/
+    color: red;
+    text-decoration: underline;
+}
+
+/*=====Servicios=====*/
+
+.contenedor__servicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.subtitulo{
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.descripcion__servicio{
+    color: white;
+    font-weight: 300;
+}
+
+.n-service{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.contenido__servicio{
+    width: 80%;
+}
+
+.number{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: red;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 60px;
+    margin-right: 6px; 
+    border: 2px solid red;
+}
+
+.certify{
+    font-size: 30px;
+}
+
+
+/*=====GALERIA=====*/
+
+.galeria{
+    background: #212121;
+}
+
+.contenedor__galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img__galeria{
+    width: 30%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+
+.imagen-light{
+    position: fixed;
+    background: rgb(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+
+
+.show{
+    transform: translate(0);
+}
+
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    height: 85%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+
+.showImage{
+    transform: scale(1);
+}
+
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/*======EXPERTS=====*/
+.experts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor__expertos1{
+    width: 40%;
+}
+
+.titulo__experto{
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contenido__expertos{
+    margin-bottom: 20px;
+}
+
+.contenedor__expertos2{
+    width: 40%;
+
+}
+
+.img__expertos{
+    width: 100%;
+}
+
+/*=====EQUIPO RILEY=====*/
+
+.contenedor__equipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipo{
+    width: 49%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #212121;
+
+}
+
+.img__equipo{
+    border-radius: 50%;
+    margin: auto;
+}
+
+.body__equipo{
+    margin-top: 15px;
+}
+
+.titulo__equipo{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contenido__equipo1{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contenido__equipo{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contenido__color{
+    color: #007E33;
+}
+
+.contenido__color1{
+    color: #0d47a1;
+}
+
+.equipo__mail{
+    color: red;
+}
+
+
+/*=====FORM CONTACTO=====*/
+
+.contacto{
+    background: #212121;
+}
+
+.contenedor__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.titulo__contacto{
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.contactanos{
+    width: 20%;
+}
+
+.escribanos{
+    width: 60%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    height: 45px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background: #263238;
+    outline: none;
+    font-size: 17px;
+    padding-left: 15px;
+    caret-color: white;
+    color: antiquewhite;
+}
+
+.formulario textarea{
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #263238;
+    color: aliceblue;
+    font-size: 17px;
+    padding-left: 15px;
+
+}
+
+.btn__contacto{
+    width: 25%;
+    /*background: #CC0000 !important;*/
+    color: white;
+    background: #b71c1c !important;
+    cursor: pointer;
+    
+}
+
+
+/*=====FOOTER=====*/
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #b71c1c;
+
+}
+
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+    color: #b71c1c;
+}
+
+.brand p {
+    font-weight: 500;
+    color: #b71c1c !important;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #b71c1c;
+    border-radius: 50%;
+    text-align: center;
+    color: #b71c1c;
+
+
+}
+
+
+.social-media-icon:hover{
+    background: black;
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #b71c1c;
+    margin-bottom: 60px;
+
+}
+
+
+/*=====MEDIA QUERY 850PX=====*/
+
+
+@media screen and (max-width: 850px){
+    .service{
+        width: 60%;
+        margin-bottom: 45px;
+    }
+
+    .img__galeria{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .contenedor__expertos2{
+        width: 60%;
+        margin-bottom: 45px;
+    }
+
+    .contenedor__expertos1{
+        width: 60%;
+    }
+
+    .contactanos{
+        display: none;
+    }
+    
+    .escribanos{
+        width: 100%;
+    }
+
+
+}
+
+
+/*=====MEDIA QUERY 450PX=====*/
+
+@media screen and (max-width: 850px){
+
+    .titulo__banner{
+        font-size: 49px;
+    }
+
+    .subtitulo__banner{
+        font-size: 18px;
+    }
+    .service{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .img__galeria{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contenedor__expertos2{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .contenedor__expertos1{
+        width: 100%;
+    }
+
+    .equipo{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .contactanos{
+        display: none;
+    }
+
+    .btn__contacto{
+        width: 100%;
+    }
+    
+    .escribanos{
+        width: 100%;
+    }
+
+    .agregar-imagen{
+        width: 92%;
+        padding: 1rem;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+
+    }
+
+}
